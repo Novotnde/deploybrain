@@ -1,0 +1,10 @@
+# OS junk
+.DS_Store
+
+# Build output
+/api/bin/
+/api/obj/
+
+# Rider / IDE
+.idea/
+.vs/
