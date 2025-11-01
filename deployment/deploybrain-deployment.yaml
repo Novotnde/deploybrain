@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deploybrain-deployment
+  labels:
+    app: deploybrain
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: deploybrain
+  template:
+    metadata:
+      labels:
+        app: deploybrain
+    spec:
+      containers:
+        - name: deploybrain-container
+          image: deploybrain:0.1.0           # <- use the loaded tag
+          imagePullPolicy: IfNotPresent       # <- don’t pull from registry
+          ports:
+            - containerPort: 8080             # <- ASP.NET default in container
+              protocol: TCP

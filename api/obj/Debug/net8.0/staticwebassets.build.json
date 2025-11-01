@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "4bQckVpoyeZGUrw+wfGZRDtEWWykheF0Bud2ZTEojZ4=",
+  "Source": "DeployBrain.Api",
+  "BasePath": "_content/DeployBrain.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
