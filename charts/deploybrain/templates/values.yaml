@@ -1,0 +1,13 @@
+fullnameOverride: "deploybrain"
+
+image:
+  repository: docker.io/dnovotnadocker/deploybrain
+  tag: "0.1.0"
+  pullPolicy: Always
+
+pod:
+  containerPort: 8080
+
+service:
+  type: ClusterIP
+  port: 80
