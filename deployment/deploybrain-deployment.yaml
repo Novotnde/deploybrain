@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
         - name: deploybrain-container
-          image: http://docker.io/dnovotnadocker/deploybrain          # <- use the loaded tag
+          image: https://hub.docker.com/r/dnovotnadocker/deploybrain:0.1.0
+          # <- use the loaded tag
           imagePullPolicy: Always       # <- don’t pull from registry
           ports:
             - containerPort: 8080             # <- ASP.NET default in container
